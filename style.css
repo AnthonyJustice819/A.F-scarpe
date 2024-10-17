@@ -25,11 +25,10 @@ body {
   width: 100%;
   padding: 3em 3em;
   background-color: #fff;
-    border-radius: 15px;
 }
 .logo {
-  height: 60px;
-  width: 60px;
+  height: 52px;
+  width: 52px;
   scroll-padding-top: 0em;
   object-fit: cover;
   border-radius: 100%;
@@ -66,7 +65,7 @@ nav ul li a:hover {
   color: #fff;
   border-radius: 5px;
 }
-.sign-up {
+.cart {
   font-size: 16px;
   padding: 5px;
   border: 1px solid #715c47;
@@ -87,7 +86,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   margin-bottom: 10em;
 }
 #section-1 .content h1 {
@@ -359,7 +358,7 @@ input[type="submit"] {
   body {
     width: 100%;
     padding: 0;
-    background: #ffefbc;
+    background: #fff;
   }
   #section-1 .content h1 {
     max-width: 100%;
@@ -395,7 +394,6 @@ input[type="submit"] {
   .wrapper {
   width: 100%;
   padding: 0;
-    background-color: #fdf0bc;
 }
 header {
     padding: 3em 1em;
@@ -471,19 +469,15 @@ flex-direction: column;
     text-align: center;
   }
 }
-@media screen and (max-width: 452px) {
-  .sign-up {
-    display: none;
-  }
-}
 /* mobile screen size */
 @media screen and (max-width: 425px) {
 
   header {
+    background-color: #fff;
     position: fixed;
     top: 0;
     padding: 1em 1em;
-    margin-bottom: 15em;
+    margin-bottom: 17em;
     z-index: 999;
     box-shadow: rgb(0, 0, 0, 0.1) 0px 4px 12px;
   }
@@ -505,8 +499,13 @@ flex-direction: column;
   nav ul li a {
     color: #ffd;
   }
-  .sign-up {
-    display: none;
+  .cart {
+    margin-right: 1rem;
+  }
+  .biii {
+ display: inline-flex;
+ align-items: center;
+
   }
   #checkbtn {
     display: block;
@@ -516,7 +515,7 @@ flex-direction: column;
     transition: 0.5s ease-in-out;
   }
   #section-1 {
-    margin-top: 3em;
+    margin-top: 5em;
     margin-bottom: 3em;
   }
 }
