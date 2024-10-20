@@ -180,14 +180,14 @@ nav ul li a:hover {
   padding: 1em;
   border-radius: 15px;
 }
-/* #about .aboutbox::before {
+#about .aboutbox::before {
   content: "";
   position: absolute;
   left: 35rem;
-  top: 95em;
+  top: 94em;
   height: 200px;
   border-left: 2px solid#000;
-} */
+}
 #about h1 {
     margin-bottom: .5em;
   font-size: 45px;
