@@ -7,6 +7,7 @@
 }
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
 }
 body {
   width: 100%;
@@ -143,6 +144,7 @@ nav ul li a:hover {
   padding: 1em;
   margin: 1em;
   line-height: 2em;
+  max-width: 100%;
 }
 .listproduct .item img {
   width: 100px;
@@ -167,14 +169,14 @@ nav ul li a:hover {
   padding: 1em;
   border-radius: 15px;
 }
-#about .aboutbox::before {
+/* #about .aboutbox::before {
   content: "";
   position: absolute;
   left: 32rem;
   top: 107em;
   height: 159px;
   border-left: 2px solid#000;
-}
+} */
 #about h1 {
     margin-bottom: .5em;
   font-size: 45px;
@@ -218,6 +220,7 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 .delivery,
 .track,
