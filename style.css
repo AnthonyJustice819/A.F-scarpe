@@ -195,7 +195,8 @@ nav ul li a:hover {
 #about .shopnow {
    background: #5d5d5d;
   color: #fff;
-  padding: 5px;
+  font-weight: bolder;
+  padding: 13px;
   outline: none;
   border: none;
   border-radius: 5px;
