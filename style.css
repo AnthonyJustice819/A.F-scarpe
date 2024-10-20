@@ -157,6 +157,7 @@ nav ul li a:hover {
   border-radius: 5px;
   cursor: pointer;
 }
+/* #5d5d5d */
 #about .aboutbox {
   display: flex;
   flex-direction: column;
@@ -164,11 +165,13 @@ nav ul li a:hover {
   padding: 1em;
   border-radius: 15px;
 }
-#about .aboutbox::after {
+#about .aboutbox::before {
   content: '';
-  width: 2px;
-  color: #000;
-  height: 25px;
+  position: absolute;
+  left: 32rem;
+  top: 107em;
+  height: 159px;
+  border-left: 2px solid#000;
 }
 #about h1 {
   font-size: 45px;
