@@ -227,6 +227,10 @@ nav ul li a:hover {
   align-items: center;
   justify-content: space-between;
 }
+#services .servicebox span {
+  font-weight: bolder;
+  margin-top: 10px;
+}
 #services .servicebox p {
   max-width: 50%;
   margin-top: 1em;
