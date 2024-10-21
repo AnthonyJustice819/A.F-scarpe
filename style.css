@@ -116,24 +116,34 @@ width: 100%;
   object-fit: contain;
   background-size: contain;
 }
-
+#section-2 {
+  width: 100%;
+}
 #section-2 h1{
 font-size: 45px;
 font-weight: 900;
 font-family: "Montserrat", sans-serif;
 }
 
-.product {
+#section-2 .product {
+  display: flex;
+  max-width: 100%;
+}
+
+/* #section-2 .product {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.product-content{
+#section-2 .product-content{
+  margin: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-image: linear-gradient(#ffefbc, #ffbd4d);
-}
+} */
 .product-img {
   height: 10em;
 }
