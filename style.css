@@ -123,6 +123,21 @@ font-weight: 900;
 font-family: "Montserrat", sans-serif;
 }
 
+.product {
+  display: flex;
+  justify-content: space-between;
+}
+.product-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(#ffefbc, #ffbd4d);
+}
+.product-img {
+  height: 10em;
+}
+
 
 
 
