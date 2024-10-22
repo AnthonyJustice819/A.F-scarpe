@@ -139,16 +139,16 @@ font-family: "Montserrat", sans-serif;
   justify-content: center;
 }
 .listproduct .item {
-   border: 10px solid;
+   border: 1px solid;
+  border-radius: 10px;
   border-image: linear-gradient(#b41d9e, #7916c6) 1; 
-  border-radius: 10%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
   padding: 1em;
   margin: 1em;
-  line-height: 2em;
+  
 }
 .listproduct .item img {
   width: 10em;
