@@ -141,7 +141,7 @@ font-family: "Montserrat", sans-serif;
 .listproduct .item {
    border: 10px solid;
   border-image: linear-gradient(#b41d9e, #7916c6) 1; 
-  border-radius: 10px;
+  border-radius: 10%;
   display: flex;
   align-items: center;
   flex-direction: column;
