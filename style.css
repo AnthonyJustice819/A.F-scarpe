@@ -139,9 +139,9 @@ font-family: "Montserrat", sans-serif;
   justify-content: center;
 }
 .listproduct .item {
-   border-style: solid;
-  border-width: 2px;
+   border: 10px solid;
   border-image: linear-gradient(#b41d9e, #7916c6) 1; 
+  border-radius: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
