@@ -8,30 +8,35 @@
     <script src="/script.js" defer></script>
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <a href="#home"> <img src="/images/SCARP.jpg" class="logo" alt="" /></a>
-        <nav>
-          <ul id="menuList">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#product">Product</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-          </ul>
-        </nav>
-        <div class="biii">
-          <div class="cart">
-            <svg class="" height="25px" width="25px">
-              <use href="#cart" />
-            </svg>
-            <span>0</span>
-          </div>
-
-          <svg id="checkbtn" class="btn" height="35px" width="35px">
-            <use href="#menu" />
+    <header>
+      <a href="#home"> <img src="/images/SCARP.jpg" class="logo" alt="" /></a>
+      <nav>
+        <ul id="menuList">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+        </ul>
+      </nav>
+      <div class="biii">
+        <span class="login">Login</span>
+        <svg class="user" height="25px" width="25px">
+          <use href="#user" />
+        </svg>
+        <div class="cart">
+          <svg class="" height="25px" width="25px">
+            <use href="#cart" />
           </svg>
+          <span>0</span>
         </div>
-      </header>
+
+        <svg id="checkbtn" class="btn" height="35px" width="35px">
+          <use href="#menu" />
+        </svg>
+      </div>
+    </header>
+    <div class="wrapper">
+      
 
       <section id="home">
         <div class="content">
@@ -116,7 +121,7 @@
         </div>
       </section>
 
-      <!-- <section id="services">
+       <section id="services">
         <h1>Services</h1>
 
 <div class="servicebox">
@@ -156,7 +161,7 @@
 </div>
 
         
-      </section> -->
+      </section> 
 
 
     </div>
@@ -164,6 +169,11 @@
 </html>
 
 <svg style="display: none">
+
+  <symbol id="user" viewBox="0 0 24 24">
+<path d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z"/>
+  </symbol>
+
   <symbol id="delivery" viewBox="0 0 24 24">
     <path
       d="M5 11v1h8v-7h-10v-1c0-.552.448-1 1-1h10c.552 0 1 .448 1 1v2h4.667c1.117 0 1.6.576 1.936 1.107.594.94 1.536 2.432 2.109 3.378.188.312.288.67.288 1.035v4.48c0 1.089-.743 2-2 2h-1c0 1.656-1.344 3-3 3s-3-1.344-3-3h-4c0 1.656-1.344 3-3 3s-3-1.344-3-3h-1c-.552 0-1-.448-1-1v-6h-2v-2h7v2h-3zm3 5.8c.662 0 1.2.538 1.2 1.2 0 .662-.538 1.2-1.2 1.2-.662 0-1.2-.538-1.2-1.2 0-.662.538-1.2 1.2-1.2zm10 0c.662 0 1.2.538 1.2 1.2 0 .662-.538 1.2-1.2 1.2-.662 0-1.2-.538-1.2-1.2 0-.662.538-1.2 1.2-1.2zm-3-2.8h-10v2h.765c.549-.614 1.347-1 2.235-1 .888 0 1.686.386 2.235 1h5.53c.549-.614 1.347-1 2.235-1 .888 0 1.686.386 2.235 1h1.765v-4.575l-1.711-2.929c-.179-.307-.508-.496-.863-.496h-4.426v6zm1-5v3h5l-1.427-2.496c-.178-.312-.509-.504-.868-.504h-2.705zm-16-3h8v2h-8v-2z"

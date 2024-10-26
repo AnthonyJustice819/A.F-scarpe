@@ -27,11 +27,13 @@ body {
   border-radius: 100%;
 }
 header {
+  background-color: #f9f9f9;
   width: 100%;
   height: 60px;
+  padding: 2em;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 nav {
   max-width: 100%;
@@ -45,6 +47,7 @@ nav ul li {
   margin-right: 5px;
   margin-left: 5px;
   font-weight: 900;
+  text-align: center;
 }
 nav ul li a {
   color: #1b2d45;
@@ -57,9 +60,16 @@ nav ul li a:hover {
   color: #fff;
   border-radius: 5px;
 }
+.biii {
+  display: flex;
+  align-items: center;
+}
+.biii .login {
+  margin-right: 1em;
+}
 .cart {
   font-size: 16px;
-  padding: 5px;
+  padding: 3px;
   border: 1px solid #715c47;
   border-radius: 5px;
   cursor: pointer;
@@ -69,9 +79,11 @@ nav ul li a:hover {
   color: #fff;
   background: rgb(238, 89, 89);
   padding: 4px;
+  margin-bottom: 1px;
   border-radius: 3px;
 }
-#checkbtn {
+
+#checkbtn, .user  {
   display: none;
 }
 
@@ -264,6 +276,7 @@ nav ul li a:hover {
 flex-direction: column;
   width: 100%;
   margin-bottom: 0;
+  height: 69vh;
   } 
     #home .content {
     display: flex;
@@ -280,13 +293,13 @@ flex-direction: column;
 }
 
 /* mobile screen size */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 485px) {
   .wrapper {
-    padding: 0;
+    padding: 0.5em;
   }
 
   header {
-    background-color: #fff;
+    background-color: #f9f9f9;
     position: fixed;
     top: 0;
     padding: 1em 1em;
@@ -312,12 +325,18 @@ flex-direction: column;
   nav ul li a {
     color: #ffd;
   }
-  .cart {
+  .cart, .user {
     margin-right: 1rem;
   }
   .biii {
     display: inline-flex;
     align-items: center;
+  }
+  .user {
+    display: block;
+  }
+  .biii .login {
+ display: none;
   }
   #checkbtn {
     display: block;
@@ -327,7 +346,20 @@ flex-direction: column;
     transition: 0.5s ease-in-out;
   }
   #home {
-    margin-top: 5em;
+    margin-top: 2em;
     margin-bottom: 3em;
+  }
+  .listproduct .item {
+    border: 2px solid #5d5d5d;
+    border-radius: 10px;
+    display: flex;
+    flex-basis: 0;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: #5d5d5d 0px 5px 15px;
+    padding: 1em;
+    margin: 1em;
+    line-height: 2em;
+    width: 100%;
   }
 }
