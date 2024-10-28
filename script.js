@@ -6,7 +6,7 @@ menuList.style.maxHeight = "0px";
 
 btn.addEventListener('click', function(e){
     if (menuList.style.maxHeight == "0px") {
-        menuList.style.maxHeight = "130px"
+        menuList.style.maxHeight = "270px"
     } else {
         menuList.style.maxHeight = "0px"
     }
