@@ -186,7 +186,9 @@ nav ul li a:hover {
   border-left: 1.9px solid black;
   height: 200px;
 }
-
+.hor {
+  display: none;
+}
 #about h1 {
   margin-bottom: 0.5em;
   font-size: 45px;
@@ -197,10 +199,11 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 #about .aboutcontent img {
   width: 100%;
-  height: 20rem;
+  height: 15rem;
   object-fit: contain;
   background-size: contain;
 }
@@ -261,6 +264,25 @@ nav ul li a:hover {
     object-fit: contain;
     background-size: contain;
   }
+}
+@media screen and (max-width: 735px) {
+  #about .aboutcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.ver {
+display: none;
+}
+.hor {
+  display: initial;
+  width: 50%;
+
+}
+
+
 }
 @media screen and (max-width: 615px) {
   .wrapper {
@@ -355,7 +377,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
   .listproduct .item {
     border: 2px solid #5d5d5d;
@@ -363,10 +385,8 @@ nav ul li a:hover {
     display: flex;
     flex-basis: 0;
     align-items: center;
-    flex-direction: column;
     box-shadow: #5d5d5d 0px 5px 15px;
     padding: 1em;
-    /* margin: 1em; */
     line-height: 2em;
     width: 100%;
   }
