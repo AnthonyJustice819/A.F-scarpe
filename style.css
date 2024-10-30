@@ -146,6 +146,7 @@ nav ul li a:hover {
   flex-wrap: wrap;
 }
 .listproduct .item {
+  width: 100%;
   border: 2px solid #5d5d5d;
   border-radius: 10px;
   display: flex;
@@ -154,7 +155,7 @@ nav ul li a:hover {
   flex-direction: column;
   box-shadow: #5d5d5d 0px 5px 15px;
   padding: 1em;
-  margin: 1em;
+  margin: 1em 0;
   line-height: 2em;
   max-width: 100%;
 }
@@ -258,6 +259,7 @@ nav ul li a:hover {
 @media screen and (max-width: 1024px) {
   body {
     padding: 0;
+    background: #f9f9f9;
   }
 }
 @media screen and (max-width: 768px) {
@@ -293,33 +295,6 @@ display: none;
 
 
 }
-@media screen and (max-width: 615px) {
-  .wrapper {
-    padding: 1em;
-  }
-}
-
-@media screen and (max-width: 580px) {
-  #home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 0;
-    height: 69vh;
-  }
-  #home .content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  #home .content h1,
-  p {
-    text-align: center;
-  }
-
-}
 
 /* mobile screen size */
 @media screen and (max-width: 680px) {
@@ -329,7 +304,6 @@ display: none;
 
   header {
     background-color: #f9f9f9;
-
     position: fixed;
     top: 0;
     padding: 1em 1em;
@@ -387,18 +361,50 @@ display: none;
     /* flex-wrap: wrap; */
   }
   .listproduct .item {
+    width: 100%;
     border: 2px solid #5d5d5d;
     border-radius: 10px;
     display: flex;
-    flex-basis: 0;
+    /* flex-basis: 47%; */
     align-items: center;
     box-shadow: #5d5d5d 0px 5px 15px;
     padding: 1em;
     line-height: 2em;
-    width: 100%;
+    margin: 1em 0.5em;
+  }
+}
+@media screen and (max-width: 615px) {
+  .wrapper {
+    padding: 1em;
   }
 }
 
+@media screen and (max-width: 580px) {
+  #home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0;
+    height: 69vh;
+  }
+  #home .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #home .content h1,
+  p {
+    text-align: center;
+  }
+
+}
+@media screen and (max-width: 487px) {
+  .listproduct .item {
+    flex-basis: 43%;
+  }
+}
 @media screen and (max-width: 370px) {
   .listproduct {
     display: flex;
