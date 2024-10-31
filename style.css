@@ -99,7 +99,7 @@ nav ul li a:hover {
   justify-content: space-between;
   align-items: center;
   margin-top: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 }
 
 #home .content h1 {
@@ -386,8 +386,8 @@ display: none;
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 69vh;
-    margin-top: 3em;
+    /* height: 69vh; */
+    margin-top: 5em;
     /* margin-bottom: 4em; */
   }
   #home .content {
@@ -404,11 +404,6 @@ display: none;
 @media screen and (max-width: 487px) {
   .listproduct .item {
     flex-basis: 43%;
-  }
-}
-@media screen and (max-width: 403px) {
-  #home {
-    margin-top: 8em;
   }
 }
 @media screen and (max-width: 370px) {
