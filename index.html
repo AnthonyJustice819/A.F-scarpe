@@ -11,12 +11,12 @@
     <header>
       <a href="#home"> <img src="/images/SCARP.jpg" class="logo" alt="" /></a>
       <nav>
-       <ul id="menuList">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Product</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-       </ul>
+        <ul id="menuList">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
       </nav>
       <div class="biii">
         <span class="login">Login</span>
@@ -36,9 +36,7 @@
       </div>
     </header>
     <div class="wrapper">
-      
       <section id="home">
-        
         <div class="content">
           <h1>A.F SCARPE</h1>
           <p>
@@ -84,6 +82,13 @@
             <button class="addcart">Add to cart</button>
           </div>
         </div>
+
+        <button class="seemore">
+          See More
+          <svg class="arrow" height="25px" width="25px">
+            <use href="#arrow" />
+          </svg>
+        </button>
       </section>
 
       <section id="about">
@@ -95,10 +100,9 @@
               <img src="/images/hero.png" alt="" />
             </div>
 
-            <div class="ver">
-            </div>
-            
-              <hr class="hor">
+            <div class="ver"></div>
+
+            <hr class="hor" />
 
             <div class="abouttxt">
               <p>
@@ -106,11 +110,6 @@
                 eveniet tempora ipsam perferendis molestias sint delectus harum
                 a ducimus officia. Ipsa similique atque tenetur cumque
                 consequuntur commodi, cum ipsam eos autem obcaecati, corporis
-                reiciendis, unde mollitia beatae. Sit dolor cum earum reiciendis
-                voluptatem mollitia animi soluta temporibus iure ex
-                exercitationem quos aut, adipisci fugiat explicabo quas rem
-                ullam ut obcaecati incidunt repudiandae dolores? Quasi ratione,
-       
               </p>
             </div>
           </div>
@@ -122,57 +121,60 @@
         </div>
       </section>
 
-       <section id="services">
+      <!-- <section id="services">
         <h1>Services</h1>
 
-<div class="servicebox">
+        <div class="servicebox">
+          <div class="delivery">
+            <svg class="" height="60px" width="60px">
+              <use href="#delivery" />
+            </svg>
+            <span>Fast Delivery</span>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusantium temporibus aperiam totam, illo numquam vitae.
+            </p>
+          </div>
 
-<div class="delivery">
-          <svg class="" height="60px" width="60px">
-            <use href="#delivery" />
-          </svg>
-          <span>Fast Delivery</span>
-           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Accusantium temporibus aperiam totam, illo numquam vitae.
-          </p>
+          <div class="track">
+            <svg class="" height="60px" width="60px">
+              <use href="#track" />
+            </svg>
+            <span>Track Your Order</span>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusantium temporibus aperiam totam, illo numquam vitae.
+            </p>
+          </div>
+
+          <div class="support">
+            <svg class="" height="60px" width="60px">
+              <use href="#support" />
+            </svg>
+            <span> 24/7 Customer Support</span>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusantium temporibus aperiam totam, illo numquam vitae.
+            </p>
+          </div>
         </div>
-
-        <div class="track">
-          <svg class="" height="60px" width="60px">
-            <use href="#track" />
-          </svg> 
-          <span>Track Your Order</span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Accusantium temporibus aperiam totam, illo numquam vitae.
-          </p>
-        </div>
-
-        <div class="support">
-          <svg class="" height="60px" width="60px">
-            <use href="#support" />
-          </svg>
-      <span>    24/7 Customer Support</span>
-           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Accusantium temporibus aperiam totam, illo numquam vitae.
-          </p>
-        </div>
-</div>
-
-        
-      </section> 
-
-
+      </section> -->
     </div>
   </body>
 </html>
 
 <svg style="display: none">
+  <symbol id="arrow" viewBox="0 0 24 24">
+    <path
+      d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
+      fill-rule="nonzero"
+    />
+  </symbol>
 
   <symbol id="user" viewBox="0 0 24 24">
-<path d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z"/>
+    <path
+      d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z"
+    />
   </symbol>
 
   <symbol id="delivery" viewBox="0 0 24 24">
