@@ -91,7 +91,6 @@ nav ul li a:hover {
 
 #home {
   width: 100%;
-  height: 100vh;
   background-image: url(/images/bgg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -99,8 +98,10 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin-bottom: 5em; */
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
+
 #home .content h1 {
   font-size: 45px;
   line-height: 110.5%;
@@ -111,18 +112,17 @@ nav ul li a:hover {
 #home .content p {
   max-width: 20em;
   font-size: 20px;
-  margin-top: 5vh;
-  margin-bottom: 3vh;
+   margin-top: 1em;
   font-family: "Inter", sans-serif;
 }
 #home .content .span {
-  margin-top: 4em;
+  /* margin-top: 4em; */
   display: block;
   cursor: pointer;
 }
 .hero-image {
   width: 100%;
-  height: 30rem;
+  height: 25rem;
   object-fit: contain;
   background-size: contain;
 }
@@ -352,7 +352,7 @@ display: none;
   }
   #home {
 
-     margin-top: 6em;
+     /* margin-top: 6em; */
      /* margin-bottom: 5em; */
   }
   .listproduct {
@@ -388,7 +388,8 @@ display: none;
     flex-direction: column;
     width: 100%;
     height: 69vh;
-    margin-bottom: 4em;
+    margin-top: 7em;
+    /* margin-bottom: 4em; */
   }
   #home .content {
     display: flex;
@@ -404,6 +405,11 @@ display: none;
 @media screen and (max-width: 487px) {
   .listproduct .item {
     flex-basis: 43%;
+  }
+}
+@media screen and (max-width: 403px) {
+  #home {
+    margin-top: 8em;
   }
 }
 @media screen and (max-width: 370px) {
