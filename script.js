@@ -18,16 +18,14 @@ list.forEach(function (list){
 })
 }) 
 
-const addtocart = document.querySelectorAll('.listproduct .item .addcart').forEach(button => {
-   addtocart.addEventListener('click', () => {
-        // Get the current count from the span
-        const cartCountSpan = document.getElementById('cart-count');
-        let currentCount = parseInt(cartCountSpan.textContent);
+const cartNum = document.querySelector('.cartnum');
+const addtocart = document.querySelectorAll('.addcart');
+let counter = 0;
 
-        // Increase the count
-        currentCount += 1;
-
-        // Update the span with the new count
-        cartCountSpan.textContent = currentCount;
+addtocart.forEach(function(item) {
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
+        counter += 1;
+        cartNum.innerText = counter;
     });
 });
