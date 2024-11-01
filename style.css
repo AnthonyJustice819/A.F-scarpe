@@ -102,15 +102,13 @@ nav ul li a:hover {
   right: 2em;
   bottom: 0;
   display: grid;
-  grid-template-rows: 70px 1fr 70px;
+  grid-template-rows: 70px 1fr 30px;
 }
 .cartsection .btn {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.cartsection .btn button {
-  padding: 3em;
-}
+
 #home {
   width: 100%;
   background-image: url(/images/bgg.jpg);
