@@ -335,7 +335,8 @@ display: none;
     top: 58px;
     right: 0;
     margin-right: 0;
-    background: #715c47;
+    background: #5d5d5d;
+    /* background: #715c47; */
   }
   nav ul li {
     display: block;
