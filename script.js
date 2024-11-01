@@ -17,3 +17,17 @@ list.forEach(function (list){
     menuList.style.maxHeight = "0px";
 })
 }) 
+
+const addtocart = document.querySelectorAll('.listproduct .item .addcart').forEach(button => {
+   addtocart.addEventListener('click', () => {
+        // Get the current count from the span
+        const cartCountSpan = document.getElementById('cart-count');
+        let currentCount = parseInt(cartCountSpan.textContent);
+
+        // Increase the count
+        currentCount += 1;
+
+        // Update the span with the new count
+        cartCountSpan.textContent = currentCount;
+    });
+});
