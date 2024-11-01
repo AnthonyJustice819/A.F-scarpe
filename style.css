@@ -92,6 +92,25 @@ nav ul li a:hover {
 .user {
   display: none;
 }
+.cartsection {
+  background: #5d5d5d;
+  color: #fff;
+  width: 400px;
+  max-width: 100%;
+  position: fixed;
+  top: 6em;
+  right: 2em;
+  bottom: 0;
+  display: grid;
+  grid-template-rows: 70px 1fr 70px;
+}
+.cartsection .btn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.cartsection .btn button {
+  padding: 3em;
+}
 #home {
   width: 100%;
   background-image: url(/images/bgg.jpg);
