@@ -20,8 +20,8 @@ body {
   padding: 2em;
 }
 .logo {
-  height: 52px;
-  width: 52px;
+  height: 6em;
+  width: 6em;
   scroll-padding-top: 0em;
   object-fit: cover;
   border-radius: 100%;
