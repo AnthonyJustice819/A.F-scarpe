@@ -20,8 +20,8 @@ body {
   padding: 2em;
 }
 .logo {
-  height: 6em;
-  width: 6em;
+  height: 8em;
+  width: 8em;
   scroll-padding-top: 0em;
   object-fit: cover;
   border-radius: 100%;
@@ -41,6 +41,7 @@ nav {
 nav ul {
   width: 100%;
   text-align: right;
+  margin-bottom: 1.2em;
 }
 nav ul li {
   display: inline-block;
@@ -66,7 +67,6 @@ nav ul li a:hover {
 }
 .biii .login {
   margin-right: 5em;
-  margin-top: 1em;
 }
 .cart {
   font-size: 16px;
@@ -302,13 +302,13 @@ display: none;
 }
 .hor {
   display: initial;
-  width: 57%;
+  width: 79%;
   height: 2px;
   background: #000;
   margin: 2em 0;
 }
 #about .aboutcontent .abouttxt {
-  width: 65%;
+  max-width: 78%;
   text-align: center;
 }
 
@@ -429,6 +429,10 @@ display: none;
   .listproduct .item {
     flex-basis: 43%;
   }
+    #about .aboutcontent .abouttxt {
+max-width: 100%;
+  text-align: center;
+}  
 }
 @media screen and (max-width: 370px) {
   .listproduct {
@@ -437,4 +441,5 @@ display: none;
     align-items: center;
     flex-wrap: wrap;
   }
+
 }
