@@ -254,12 +254,16 @@ nav ul li a:hover {
 }
 #services .servicebox {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
+
 .delivery,
 .track,
 .support {
+  flex-wrap: wrap;
+  flex-basis: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -271,7 +275,7 @@ nav ul li a:hover {
 }
 #services .servicebox p {
   text-align: center;
-  max-width: 50%;
+  max-width: 40%;
   margin-top: 1em;
 }
 
@@ -391,6 +395,12 @@ display: none;
     line-height: 2em;
     margin: 1em 0.5em;
   }
+  #services .servicebox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 }
 @media screen and (max-width: 615px) {
   .wrapper {
