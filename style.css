@@ -253,29 +253,17 @@ nav ul li a:hover {
   margin-bottom: 1em;
 }
 #services .servicebox {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
   align-items: center;
+ flex-wrap: wrap; */
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
 }
 
-/* .servicebox {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
-}
-.servicebox > div {
-    flex: 1 1 300px; 
-    min-width: 250px;
-    max-width: 30%;
-    padding: 15px;
-    text-align: center;
-    transition: transform 0.2s;
-}
-.servicebox > div:hover {
-    transform: scale(1.05);
-} */
+
 
 #services .servicebox .icon {
   display: flex;
@@ -411,12 +399,12 @@ display: none;
     line-height: 2em;
     margin: 1em 0.5em;
   }
-  #services .servicebox {
+  /* #services .servicebox {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-}
+} */
 }
 @media screen and (max-width: 615px) {
   .wrapper {
