@@ -163,7 +163,7 @@ nav ul li a:hover {
   object-fit: contain;
 }
 .listproduct .item .addcart {
-  background: #ffbd4d;
+  background: #5d5d5d;;
   color: #fff;
   font-weight: 600;
   padding: 8px;
@@ -232,7 +232,7 @@ nav ul li a:hover {
   max-width: 47%;
 }
 #about .shopnow {
-  background: green;
+  background: #5d5d5d;;
   color: #fff;
   font-weight: bolder;
   padding: 13px;
@@ -260,7 +260,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 .track, .delivery, .support {
-  fill: #e99e1d;
+  fill: #5d5d5d;;
 }
 #services .servicebox .icon {
   display: flex;
