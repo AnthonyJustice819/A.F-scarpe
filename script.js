@@ -1,6 +1,12 @@
 const btn = document.querySelector('header #checkbtn');
 const menuList = document.querySelector('nav #menuList');
 const list = document.querySelectorAll('nav li');
+const cartNum = document.querySelector('.cartnum');
+const addtocart = document.querySelectorAll('.addcart');
+const carticn = document.querySelector('.carticon');
+const cartsection = document.querySelector('.cartTab');
+const closecart = document.querySelector('.close');
+console.log(cartsection);
 
 menuList.style.maxHeight = "0px";
 
@@ -18,8 +24,7 @@ list.forEach(function (list){
 })
 }) 
 
-const cartNum = document.querySelector('.cartnum');
-const addtocart = document.querySelectorAll('.addcart');
+
 let counter = 0;
 
 addtocart.forEach(function(item) {
@@ -29,3 +34,17 @@ addtocart.forEach(function(item) {
         cartNum.innerText = counter;
     });
 });
+
+
+cartsection.style.width = "0px";
+
+carticn.addEventListener('click', function(e){
+    if (cartsection.style.width == "0px") {
+        cartsection.style.width = "270px"
+    } else {
+       cartsection.style.width = "0px"
+    }
+})
+closecart.addEventListener('click', ()=> {
+       cartsection.style.width = "0px"
+})
