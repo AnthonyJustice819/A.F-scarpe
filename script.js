@@ -6,6 +6,7 @@ const addtocart = document.querySelectorAll('.addcart');
 const carticn = document.querySelector('.carticon');
 const cartsection = document.querySelector('.cartTab');
 const closecart = document.querySelector('.close');
+const carttTab = document.querySelector('.cartTab')
 console.log(cartsection);
 
 menuList.style.maxHeight = "0px";
@@ -41,8 +42,10 @@ cartsection.style.width = "0px";
 carticn.addEventListener('click', function(e){
     if (cartsection.style.width == "0px") {
         cartsection.style.width = "270px"
+        carttTab.style.right = "2em";
     } else {
        cartsection.style.width = "0px"
+       carttTab.style.right = "0";
     }
 })
 closecart.addEventListener('click', ()=> {
