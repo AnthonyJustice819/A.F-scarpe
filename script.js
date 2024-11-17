@@ -42,7 +42,10 @@ cartsection.style.width = "0px";
 carticn.addEventListener('click', function(e){
     if (cartsection.style.width == "0px") {
         cartsection.style.width = "270px"
-        carttTab.style.right = "2em";
+        // carttTab.style.right = "2em";
+        if (window.innerWidth > 1024) {
+            carttTab.style.right = "2em";
+        }
     } else {
        cartsection.style.width = "0px"
        carttTab.style.right = "0";
