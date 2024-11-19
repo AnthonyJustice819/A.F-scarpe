@@ -26,13 +26,39 @@ list.forEach(function (list){
 }) 
 
 
+// let counter = 0;
+
+// addtocart.forEach(function(item) {
+//     item.addEventListener('click', (e) => {
+//         e.preventDefault();
+//         counter += 1;
+//         cartNum.innerText = counter;
+//     });
+// });
+
+const numberToJapanese = {
+    // 0: 'ゼロ',
+    1: 'いち',
+    2: 'に',
+    3: 'さん',
+    4: 'し',
+    5: 'ご',
+    6: 'ろく',
+    7: 'なな',
+    8: 'はち',
+    9: 'きゅう',
+    10: 'じゅう'
+    // Add more mappings if you want to support numbers greater than 10
+};
 let counter = 0;
 
 addtocart.forEach(function(item) {
     item.addEventListener('click', (e) => {
         e.preventDefault();
         counter += 1;
-        cartNum.innerText = counter;
+        
+        // Update the cart number to its Japanese equivalent
+        cartNum.innerText = numberToJapanese[counter] || counter; // Default to the number if not mapped
     });
 });
 
@@ -54,3 +80,4 @@ carticn.addEventListener('click', function(e){
 closecart.addEventListener('click', ()=> {
        cartsection.style.width = "0px"
 })
+
