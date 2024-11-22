@@ -12,7 +12,7 @@ html {
 body {
   width: 100%;
   padding: 2em;
-  background: #ffbd4d;
+  /* background: #ffbd4d; */
 }
 .wrapper {
   width: 100%;
@@ -95,8 +95,65 @@ nav ul li a:hover {
   display: none;
 }
 
-
-
+.sidebar {
+  width: 300px;
+  height: 85vh;
+  color: #fff;
+  position: fixed;
+  top: 6em;
+  right: 0;
+  /* right: 300px; */
+  background: #5d5d5d;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.sidebar.open {
+  right: 0;
+}
+.sidebar-close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+}
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 1rem;
+}
+.cart-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.sidebar-footer {
+  position: absolute;
+  bottom: 10px;
+  width: 88%;
+}
+.total-amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 15px 10px;
+}
+.checkout {
+  width: 100%;
+  margin-top: 1rem;
+  background: green;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+}
 #home {
   width: 100%;
   background-image: url(/images/bgg.jpg);
