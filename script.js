@@ -81,3 +81,60 @@ closecart.addEventListener('click', ()=> {
        cartsection.style.width = "0px"
 })
 
+document.addEventListener('DOMContentLoaded', () => {
+    const cartItems = [];
+    const totalDisplay = document.querySelector('.total');
+    const cartList = document.getElementById('cartitems');
+  
+    // Function to update the cart display
+    function updateCartDisplay() {
+      cartList.innerHTML = ''; // Clear the current list
+      let total = 0;
+  
+      cartItems.forEach(item => {
+        const li = document.createElement('li');
+        
+        // Create an image element
+        const img = document.createElement('img');
+        img.src = item.image; // Set the image source
+        img.alt = item.name; // Set alt text
+        img.style.width = '50px'; // Set a width for the image (optional)
+        img.style.height = 'auto'; // Maintain aspect ratio (optional)
+        
+        // Append the image to the list item
+        li.appendChild(img);
+        
+        // Add the text content
+        li.appendChild(document.createTextNode(`${item.name} - ${item.price}`));
+        cartList.appendChild(li);
+        total += item.price;
+      });
+  
+      totalDisplay.textContent = total;
+    }
+  
+    // Event listener for Add to Cart buttons
+    document.querySelectorAll('.addcart').forEach(button => {
+      button.addEventListener('click', (event) => {
+        const itemElement = event.target.closest('.item');
+        const itemName = itemElement.querySelector('h2').textContent;
+        const itemPrice = parseInt(itemElement.querySelector('.price').textContent.replace('¥', ''), 10);
+        const itemImage = itemElement.querySelector('img').src; // Assuming there is an <img> in the item
+
+        // Add item to the cart with image
+        cartItems.push({ name: itemName, price: itemPrice, image: itemImage });
+        updateCartDisplay();
+      });
+    });
+  
+    // Close button functionality
+    document.querySelector('.close').addEventListener('click', () => {
+      document.querySelector('.cartTab').style.display = 'none';
+    });
+  
+    // Checkout button functionality (you can expand this later)
+    document.querySelector('.checkout').addEventListener('click', () => {
+      alert('Proceeding to checkout...');
+      // You can add more checkout logic here
+    });
+});

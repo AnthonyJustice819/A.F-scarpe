@@ -37,23 +37,28 @@
       </div>
     </header>
     <div class="wrapper">
-      <div class="cartTab">
-        <div>
-          Cart List
-        </div>
-
-        <!-- <div>
-          <h5>hello world</h5>
-        </div> -->
-
-        <div class="btn">
-          <button class="close">Close</button>
-          <button class="checkout">
-            Check Out</button>
-        </div>
-
-        
+      
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-close">
+    <svg id="closebtn"  height="35px" width="35px">
+      <use href="#close" />
+    </svg>
+    <div class="cart-menu">
+      <h3>My Cart</h3>
+      <div class="cart-items">Test1</div>
+    </div>
+    <div class="side-footer">
+      <div class="total-amount">
+        <h5>Total</h5>
+        <div class="cart-total">¥0.00</div>
+        <button class="checkout">CheckOut</button>
       </div>
+    </div>
+  </div>
+</div>
+
+
+
       <section id="home">
         <div class="content">
           <h1>A.F SCARPE</h1>
@@ -72,34 +77,33 @@
         <h1>Product</h1>
 
         <div class="listproduct">
-          <div class="item">
+          <div class="item" data-name="A.F SCARPE" data-price="1000">
             <img src="/images/nowww.png" alt="" />
             <h2>A.F SCARPE</h2>
             <span class="price">¥1000</span>
             <button class="addcart">Add to cart</button>
           </div>
-
-          <div class="item">
+          
+          <div class="item" data-name="A.F SCARPE" data-price="1000">
             <img src="/images/nowww.png" alt="" />
             <h2>A.F SCARPE</h2>
             <p class="price">¥1000</p>
             <button class="addcart">Add to cart</button>
           </div>
-
-          <div class="item">
+          
+          <div class="item" data-name="A.F SCARPE" data-price="1000">
             <img src="/images/nowww.png" alt="" />
             <h2>A.F SCARPE</h2>
             <span class="price">¥1000</span>
             <button class="addcart">Add to cart</button>
           </div>
-
-          <div class="item">
+          
+          <div class="item" data-name="A.F SCARPE" data-price="1000">
             <img src="/images/nowww.png" alt="" />
             <h2>A.F SCARPE</h2>
             <span class="price">¥1000</span>
             <button class="addcart">Add to cart</button>
           </div>
-        </div>
 
         <button class="seemore">
           See More
@@ -180,6 +184,11 @@
 </html>
 
 <svg style="display: none">
+
+  <symbol id="close" viewBox="0 0 24 24">
+    <path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/>
+  </symbol>
+
   <symbol id="arrow" viewBox="0 0 24 24">
     <path
       d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
