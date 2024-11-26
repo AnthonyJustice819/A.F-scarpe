@@ -101,8 +101,7 @@ nav ul li a:hover {
   color: #fff;
   position: fixed;
   top: 6em;
-  right: 0;
-  /* right: 300px; */
+  right: 0px;
   background: #5d5d5d;
   transition: right 0.3s ease-in-out;
   z-index: 1000;
@@ -110,14 +109,15 @@ nav ul li a:hover {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
-.sidebar.open {
-  right: 0;
+#sidebar {
+
 }
 .sidebar-close {
   position: absolute;
   right: 20px;
   top: 10px;
   cursor: pointer;
+  fill: #fff;
 }
 .cart-items {
   display: flex;

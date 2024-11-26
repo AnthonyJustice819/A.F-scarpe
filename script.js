@@ -3,11 +3,10 @@ const menuList = document.querySelector('nav #menuList');
 const list = document.querySelectorAll('nav li');
 const cartNum = document.querySelector('.cartnum');
 const addtocart = document.querySelectorAll('.addcart');
-const carticn = document.querySelector('.carticon');
-const cartsection = document.querySelector('.cartTab');
-const closecart = document.querySelector('.close');
-const carttTab = document.querySelector('.cartTab')
-console.log(cartsection);
+const cart = document.querySelector('.cart');
+const sidebar = document.getElementById('sidebar')
+const closesidebar = document.querySelector('.sidebar-close')
+console.log(closesidebar);
 
 menuList.style.maxHeight = "0px";
 
@@ -26,30 +25,96 @@ list.forEach(function (list){
 }) 
 
 
-// let counter = 0;
 
-// addtocart.forEach(function(item) {
-//     item.addEventListener('click', (e) => {
-//         e.preventDefault();
-//         counter += 1;
-//         cartNum.innerText = counter;
-//     });
-// });
 
 const numberToJapanese = {
-    // 0: 'ゼロ',
-    1: 'いち',
-    2: 'に',
-    3: 'さん',
-    4: 'し',
-    5: 'ご',
-    6: 'ろく',
-    7: 'なな',
-    8: 'はち',
-    9: 'きゅう',
-    10: 'じゅう'
-    // Add more mappings if you want to support numbers greater than 10
-};
+  0: 'ゼロ',
+  1: 'いち',
+  2: 'に',
+  3: 'さん',
+  4: 'し',
+  5: 'ご',
+  6: 'ろく',
+  7: 'なな',
+  8: 'はち',
+  9: 'きゅう',
+  10: 'じゅう',
+  11: 'じゅういち',
+  12: 'じゅうに',
+  13: 'じゅうさん',
+  14: 'じゅうし',
+  15: 'じゅうご',
+  16: 'じゅうろく',
+  17: 'じゅうなな',
+  18: 'じゅうはち',
+  19: 'じゅうきゅう',
+  20: 'にじゅう',
+  21: 'にじゅういち',
+  22: 'にじゅうに',
+  23: 'にじゅうさん',
+  24: 'にじゅうし',
+  25: 'にじゅうご',
+  26: 'にじゅうろく',
+  27: 'にじゅうなな',
+  28: 'にじゅうはち',
+  29: 'にじゅうきゅう',
+  30: 'さんじゅう',
+  31: 'さんじゅういち',
+  32: 'さんじゅうに',
+  33: 'さんじゅうさん',
+  34: 'さんじゅうし',
+  35: 'さんじゅうご',
+  36: 'さんじゅうろく',
+  37: 'さんじゅうなな',
+  38: 'さんじゅうはち',
+  39: 'さんじゅうきゅう',
+  40: 'よんじゅう',
+  41: 'よんじゅういち',
+  42: 'よんじゅうに',
+  43: 'よんじゅうさん',
+  44: 'よんじゅうし',
+  45: 'よんじゅうご',
+  46: 'よんじゅうろく',
+  47: 'よんじゅうなな',
+  48: 'よんじゅうはち',
+  49: 'よんじゅうきゅう',
+  50: 'ごじゅう',
+  51: 'ごじゅういち',
+  52: 'ごじゅうに',
+  53: 'ごじゅうさん',
+  54: 'ごじゅうし',
+  55: 'ごじゅうご',
+  56: 'ごじゅうろく',
+  57: 'ごじゅうなな',
+  58: 'ごじゅうはち',
+  59: 'ごじゅうきゅう',
+  60: 'ろくじゅう',
+  61: 'ろくじゅういち',
+  62: 'ろくじゅうに',
+  63: 'ろくじゅうさん',
+  64: 'ろくじゅうし',
+  65: 'ろくじゅうご',
+  66: 'ろくじゅうろく',
+  67: 'ろくじゅうなな',
+  68: 'ろくじゅうはち',
+  69: 'ろくじゅうきゅう',
+  70: 'ななじゅう',
+  71: 'ななじゅういち',
+  72: 'ななじゅうに',
+  73: 'ななじゅうさん',
+  74: 'ななじゅうし',
+  75: 'ななじゅうご',
+  76: 'ななじゅうろく',
+  77: 'ななじゅうなな',
+  78: 'ななじゅうはち',
+  79: 'ななじゅうきゅう',
+  80: 'はちじゅう',
+  81: 'はちじゅういち',
+  82: 'はちじゅうに',
+  83: 'はちじゅうさん',
+  84: 'はちじゅうし',
+  85: 'はち'
+}
 let counter = 0;
 
 addtocart.forEach(function(item) {
@@ -63,78 +128,21 @@ addtocart.forEach(function(item) {
 });
 
 
-cartsection.style.width = "0px";
+sidebar.style.right = "-300px";
 
-carticn.addEventListener('click', function(e){
-    if (cartsection.style.width == "0px") {
-        cartsection.style.width = "270px"
-        // carttTab.style.right = "2em";
-        if (window.innerWidth > 1024) {
-            carttTab.style.right = "2em";
-        }
-    } else {
-       cartsection.style.width = "0px"
-       carttTab.style.right = "0";
+cart.addEventListener('click', function(e){
+    if (sidebar.style.right == "-300px") {
+      sidebar.style.right = "0px"
+       
+    }  else {
+      sidebar.style.right = "0px"
     }
 })
-closecart.addEventListener('click', ()=> {
-       cartsection.style.width = "0px"
+
+
+closesidebar.addEventListener('click', ()=>{
+  sidebar.style.right = "-300px"
 })
-
-document.addEventListener('DOMContentLoaded', () => {
-    const cartItems = [];
-    const totalDisplay = document.querySelector('.total');
-    const cartList = document.getElementById('cartitems');
-  
-    // Function to update the cart display
-    function updateCartDisplay() {
-      cartList.innerHTML = ''; // Clear the current list
-      let total = 0;
-  
-      cartItems.forEach(item => {
-        const li = document.createElement('li');
-        
-        // Create an image element
-        const img = document.createElement('img');
-        img.src = item.image; // Set the image source
-        img.alt = item.name; // Set alt text
-        img.style.width = '50px'; // Set a width for the image (optional)
-        img.style.height = 'auto'; // Maintain aspect ratio (optional)
-        
-        // Append the image to the list item
-        li.appendChild(img);
-        
-        // Add the text content
-        li.appendChild(document.createTextNode(`${item.name} - ${item.price}`));
-        cartList.appendChild(li);
-        total += item.price;
-      });
-  
-      totalDisplay.textContent = total;
-    }
-  
-    // Event listener for Add to Cart buttons
-    document.querySelectorAll('.addcart').forEach(button => {
-      button.addEventListener('click', (event) => {
-        const itemElement = event.target.closest('.item');
-        const itemName = itemElement.querySelector('h2').textContent;
-        const itemPrice = parseInt(itemElement.querySelector('.price').textContent.replace('¥', ''), 10);
-        const itemImage = itemElement.querySelector('img').src; // Assuming there is an <img> in the item
-
-        // Add item to the cart with image
-        cartItems.push({ name: itemName, price: itemPrice, image: itemImage });
-        updateCartDisplay();
-      });
-    });
-  
-    // Close button functionality
-    document.querySelector('.close').addEventListener('click', () => {
-      document.querySelector('.cartTab').style.display = 'none';
-    });
-  
-    // Checkout button functionality (you can expand this later)
-    document.querySelector('.checkout').addEventListener('click', () => {
-      alert('Proceeding to checkout...');
-      // You can add more checkout logic here
-    });
-});
+// closesidebar.addEventListener('click', ()=>{
+//   sidebar.style.right = "0px";
+// })
