@@ -119,28 +119,29 @@ nav ul li a:hover {
   cursor: pointer;
   fill: #fff;
 }
-.cart-items {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 1rem;
-}
-.cart-items {
+
+ .cart-items {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 5px;
   border-radius: 5px;
   border: 1px solid white;
-}
+ }  
 .cart-items img {
   width: 70px;
   object-fit: contain;
 }
-.quantity input {
-  background: none;
+.quantity {
+  background: #bebebe;
+  padding: 10px;
   border: none;
   outline: none;
-
+  width: 59px;
+  border-radius: 4px;
+}
+#deletebtn {
+  fill: red;
 }
 .sidebar-footer {
   position: absolute;
