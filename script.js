@@ -40,7 +40,7 @@ addtocart.forEach(function(item) {
 });
 
 
-// sidebar.style.right = "-300px";
+sidebar.style.right = "-300px";
 
 cart.addEventListener('click', function(e){
     if (sidebar.style.right == "-300px") {
