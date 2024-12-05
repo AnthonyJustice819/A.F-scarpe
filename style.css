@@ -137,13 +137,10 @@ nav ul li a:hover {
   object-fit: contain;
 }
 .quantity input {
-  /* background: none;
+  background: none;
   border: none;
   outline: none;
-   */
 
-
-   
 }
 .sidebar-footer {
   position: absolute;
