@@ -64,6 +64,7 @@ nav ul li a:hover {
 .biii {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .biii .login {
   margin-right: 5em;
@@ -71,7 +72,6 @@ nav ul li a:hover {
 .cart {
   font-size: 14px;
   padding: 3px;
-  border: 1px solid #715c47;
   border-radius: 5px;
   cursor: pointer;
   font-family: "Inter", sans-serif;
@@ -81,7 +81,7 @@ nav ul li a:hover {
   display: flex;
   color: red;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 17px;
   padding: 5px;
   margin-bottom: 1px;
   border-radius: 30%;
@@ -131,6 +131,19 @@ nav ul li a:hover {
   padding: 10px 5px;
   border-radius: 5px;
   border: 1px solid white;
+}
+.cart-items img {
+  width: 70px;
+  object-fit: contain;
+}
+.quantity input {
+  /* background: none;
+  border: none;
+  outline: none;
+   */
+
+
+   
 }
 .sidebar-footer {
   position: absolute;
