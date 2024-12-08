@@ -75,14 +75,14 @@ function additemtocart(title, price, imagesrc) {
     cartRowContent = `<div class="cart-items">
 
             <div>
-              <img src="/images/nowww.png" alt="">
+              <img src="${imagesrc}" alt="">
               <div>
-                <p>AF SCARPE</p>
+                <p>${title}</p>
               </div>
             </div>
 
 
-            <p>¥550</p>
+            <p>${price}</p>
 
             <input type="number" value="1" class="quantity" size="7" maxlength="7">
 
