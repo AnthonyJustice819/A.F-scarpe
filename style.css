@@ -96,11 +96,11 @@ nav ul li a:hover {
 }
 
 .sidebar {
-  width: 400px;
+  width: 350px;
   height: 85vh;
   color: #fff;
   position: fixed;
-  top: 6em;
+  top: 4em;
   right: 0px;
   background: #5d5d5d;
   transition: right 0.3s ease-in-out;
@@ -451,6 +451,10 @@ display: none;
   #menuList {
     overflow: hidden;
     transition: 0.5s ease-in-out;
+  }
+  .cart-list {
+    max-height: 435px;
+    overflow: auto;
   }
   .cartsection {
     top: 3.8em;
