@@ -1,290 +1,289 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <a href="#home"> <img src="/images/newbg.png" class="logo" alt="" /></a>
-      <nav>
-        <ul id="menuList">
-          <li><a href="#">家</a></li>
-          <li><a href="#">製品</a></li>
-          <li><a href="#">について</a></li>
-          <li><a href="#">サービス</a></li>
-        </ul>
-      </nav>
-      <div class="biii">
-        <span class="login">ログイン</span>
-        <svg class="user" height="25px" width="25px">
-          <use href="#user" />
-        </svg>
 
-        <div class="cart">
-          <svg class="carticon" height="28px" width="28px">
-            <use href="#cart" />
-          </svg>
-          <span class="cartnum">0</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="/script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <a href="#home"> <img src="/images/newbg.png" class="logo" alt="" /></a>
+    <nav>
+      <ul id="menuList">
+        <li><a href="#">家</a></li>
+        <li><a href="#">製品</a></li>
+        <li><a href="#">について</a></li>
+        <li><a href="#">サービス</a></li>
+      </ul>
+    </nav>
+    <div class="biii">
+      <span class="login">ログイン</span>
+      <svg class="user" height="25px" width="25px">
+        <use href="#user" />
+      </svg>
+
+      <div class="cart">
+        <svg class="carticon" height="28px" width="28px">
+          <use href="#cart" />
+        </svg>
+        <span class="cartnum">0</span>
+      </div>
+
+      <svg id="checkbtn" class="btn" height="35px" width="35px">
+        <use href="#menu" />
+      </svg>
+    </div>
+  </header>
+  <div class="wrapper">
+
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-close">
+        <svg id="closebtn" height="25px" width="25px">
+          <use href="#close" />
+        </svg>
+      </div>
+      <div class="cart-menu">
+        <h3>My Cart</h3>
+
+        <div class="cart-list">
+          <div class="cart-items">
+
+            <div>
+              <img src="/images/nowww.png" alt="">
+              <div>
+                <p>AF SCARPE</p>
+              </div>
+            </div>
+
+
+            <p>¥550</p>
+
+            <input type="number" value="1" class="quantity" size="7" maxlength="7">
+
+            <svg id="deletebtn" height="25px" width="25px">
+              <use href="#delete" />
+            </svg>
+          </div>
+
+
+
+
+        </div>
+      </div>
+      <div class="sidebar-footer">
+        <div class="total-amount">
+          <h5>Total</h5>
+          <div class="cart-total">¥0.00</div>
+        </div>
+        <button class="checkout">CheckOut</button>
+      </div>
+
+    </div>
+
+
+
+    <section id="home">
+      <div class="content">
+        <h1>A.F SCARPE</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Do lor
+          voluptatem officia accusantium Get the best varieties of juices
+          here!"
+        </p>
+      </div>
+      <div>
+        <img src="/images/nowww.png" class="hero-image" alt="" />
+      </div>
+    </section>
+
+    <section id="product">
+      <h1>Product</h1>
+
+      <div class="listproduct">
+        <div class="item" data-name="A.F SCARPE" data-price="1000">
+          <img src="/images/nowww.png" alt="" class="productimg" />
+          <h2 class="title">A.F SCARPE</h2>
+          <span class="price">¥1000</span>
+          <button id="addcart">Add to cart</button>
         </div>
 
-        <svg id="checkbtn" class="btn" height="35px" width="35px">
-          <use href="#menu" />
+        <div class="item" data-name="A.F SCARPE" data-price="1000">
+          <img src="/images/nowww.png" alt="" class="productimg" />
+          <h2 class="title">A.F SCARPE</h2>
+          <p class="price">¥700</p>
+          <button id="addcart">Add to cart</button>
+        </div>
+
+        <div class="item" data-name="A.F SCARPE" data-price="1000">
+          <img src="/images/nowww.png" alt="" class="productimg" />
+          <h2 class="title">A.F SCARPE</h2>
+          <span class="price">860</span>
+          <button id="addcart">Add to cart</button>
+        </div>
+
+        <div class="item" data-name="A.F SCARPE" data-price="1000">
+          <img src="/images/nowww.png" alt="" class="productimg" />
+          <h2 class="title">hello</h2>
+          <span class="price">¥520</span>
+          <button id="addcart">Add to cart</button>
+        </div>
+      </div>
+      <button class="seemore">
+        See More
+        <svg class="arrow" height="25px" width="25px">
+          <use href="#arrow" />
         </svg>
-      </div>
-    </header>
-    <div class="wrapper">
-      
-<div class="sidebar" id="sidebar">
-  <div class="sidebar-close">
-    <svg id="closebtn"  height="25px" width="25px">
-      <use href="#close" />
-    </svg>
-  </div>
-    <div class="cart-menu">
-      <h3>My Cart</h3>
+      </button>
+    </section>
 
+    <section id="about">
+      <h1>About</h1>
 
-      <div class="cart-items">
-       
+      <div class="aboutbox">
+        <div class="aboutcontent">
+          <div>
+            <img src="/images/nowww.png" alt="" />
+          </div>
 
-          <img src="/images/nowww.png" alt="">
+          <div class="ver"></div>
 
-        <p>¥550</p>
+          <hr class="hor" />
 
-          <input type="number" value="0" class="quantity">
-          
-          <svg id="deletebtn"  height="25px" width="25px">
-            <use href="#delete" />
-          </svg>
-
-      
-
-      </div>
-    </div>
-    <div class="sidebar-footer">
-      <div class="total-amount">
-        <h5>Total</h5>
-        <div class="cart-total">¥0.00</div>
-      </div>
-      <button class="checkout">CheckOut</button>
-    </div>
- 
-</div>
-
-
-
-      <section id="home">
-        <div class="content">
-          <h1>A.F SCARPE</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Do lor
-            voluptatem officia accusantium Get the best varieties of juices
-            here!"
-          </p>
+          <div class="abouttxt">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+              eveniet tempora ipsam perferendis molestias sint delectus harum
+              a ducimus officia. Ipsa similique atque tenetur cumque
+              consequuntur commodi, cum ipsam eos autem obcaecati, corporis
+            </p>
+          </div>
         </div>
         <div>
-          <img src="/images/nowww.png" class="hero-image" alt="" />
+          <a href="#product">
+            <button class="shopnow">shop Now</button>
+          </a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="product">
-        <h1>Product</h1>
+    <section id="services">
+      <h1>Services</h1>
 
-        <div class="listproduct">
-          <div class="item" data-name="A.F SCARPE" data-price="1000">
-            <img src="/images/nowww.png" alt="" />
-            <h2>A.F SCARPE</h2>
-            <span class="price">¥1000</span>
-            <button class="addcart">Add to cart</button>
-          </div>
-          
-          <div class="item" data-name="A.F SCARPE" data-price="1000">
-            <img src="/images/nowww.png" alt="" />
-            <h2>A.F SCARPE</h2>
-            <p class="price">¥700</p>
-            <button class="addcart">Add to cart</button>
-          </div>
-          
-          <div class="item" data-name="A.F SCARPE" data-price="1000">
-            <img src="/images/nowww.png" alt="" />
-            <h2>A.F SCARPE</h2>
-            <span class="price">860</span>
-            <button class="addcart">Add to cart</button>
-          </div>
-          
-          <div class="item" data-name="A.F SCARPE" data-price="1000">
-            <img src="/images/nowww.png" alt="" />
-            <h2>A.F SCARPE</h2>
-            <span class="price">¥520</span>
-            <button class="addcart">Add to cart</button>
-          </div>
-          </div>
-        <button class="seemore">
-          See More
-          <svg class="arrow" height="25px" width="25px">
-            <use href="#arrow" />
+      <div class="servicebox">
+
+        <div class="icon">
+          <svg class="delivery" height="40px" width="40px">
+            <use href="#delivery" />
           </svg>
-        </button>
-      </section>
-
-      <section id="about">
-        <h1>About</h1>
-
-        <div class="aboutbox">
-          <div class="aboutcontent">
-            <div>
-              <img src="/images/nowww.png" alt="" />
-            </div>
-
-            <div class="ver"></div>
-
-            <hr class="hor" />
-
-            <div class="abouttxt">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-                eveniet tempora ipsam perferendis molestias sint delectus harum
-                a ducimus officia. Ipsa similique atque tenetur cumque
-                consequuntur commodi, cum ipsam eos autem obcaecati, corporis
-              </p>
-            </div>
-          </div>
-          <div>
-            <a href="#product">
-              <button class="shopnow">shop Now</button>
-            </a>
-          </div>
+          <h3>Fast Delivery</h3>
+          <p>
+            Experience quick and reliable delivery, brining your order to you with minimal waitin time
+          </p>
         </div>
-      </section>
 
-      <section id="services">
-        <h1>Services</h1>
-
-        <div class="servicebox">
-
-          <div class="icon">
-            <svg class="delivery"  height="40px" width="40px">
-              <use href="#delivery" />
-            </svg>
-            <h3>Fast Delivery</h3>
-            <p>
-              Experience quick and reliable delivery, brining your order to you with minimal waitin time
-            </p>
-          </div>
-
-          <div class="icon">
-            <svg class="track" height="40px" width="40px">
-              <use href="#track" />
-            </svg>
-            <h3>Track Your Order</h3>
-            <p>
-              Stay updated on your order's journey with our real-time tracking, so you always know where it is
-            </p>
-          </div>
-
-          <div class="icon">
-            <svg class="support"  height="40px" width="40px">
-              <use href="#support" />
-            </svg>
-            <h3> 24/7 Customer Support</h3>
-            <p>
-              Contact our dedicated support team anytime for assistance, ensuring a seamless shopping experience
-            </p>
-          </div>
+        <div class="icon">
+          <svg class="track" height="40px" width="40px">
+            <use href="#track" />
+          </svg>
+          <h3>Track Your Order</h3>
+          <p>
+            Stay updated on your order's journey with our real-time tracking, so you always know where it is
+          </p>
         </div>
-      </section>
-    </div>
-  </body>
+
+        <div class="icon">
+          <svg class="support" height="40px" width="40px">
+            <use href="#support" />
+          </svg>
+          <h3> 24/7 Customer Support</h3>
+          <p>
+            Contact our dedicated support team anytime for assistance, ensuring a seamless shopping experience
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
 </html>
 
 <svg style="display: none">
 
   <symbol id="delete" viewBox="0 0 24 24">
-    <path d="m4.015 5.494h-.253c-.413 0-.747-.335-.747-.747s.334-.747.747-.747h5.253v-1c0-.535.474-1 1-1h4c.526 0 1 .465 1 1v1h5.254c.412 0 .746.335.746.747s-.334.747-.746.747h-.254v15.435c0 .591-.448 1.071-1 1.071-2.873 0-11.127 0-14 0-.552 0-1-.48-1-1.071zm14.5 0h-13v15.006h13zm-4.25 2.506c-.414 0-.75.336-.75.75v8.5c0 .414.336.75.75.75s.75-.336.75-.75v-8.5c0-.414-.336-.75-.75-.75zm-4.5 0c-.414 0-.75.336-.75.75v8.5c0 .414.336.75.75.75s.75-.336.75-.75v-8.5c0-.414-.336-.75-.75-.75zm3.75-4v-.5h-3v.5z">
+    <path
+      d="m4.015 5.494h-.253c-.413 0-.747-.335-.747-.747s.334-.747.747-.747h5.253v-1c0-.535.474-1 1-1h4c.526 0 1 .465 1 1v1h5.254c.412 0 .746.335.746.747s-.334.747-.746.747h-.254v15.435c0 .591-.448 1.071-1 1.071-2.873 0-11.127 0-14 0-.552 0-1-.48-1-1.071zm14.5 0h-13v15.006h13zm-4.25 2.506c-.414 0-.75.336-.75.75v8.5c0 .414.336.75.75.75s.75-.336.75-.75v-8.5c0-.414-.336-.75-.75-.75zm-4.5 0c-.414 0-.75.336-.75.75v8.5c0 .414.336.75.75.75s.75-.336.75-.75v-8.5c0-.414-.336-.75-.75-.75zm3.75-4v-.5h-3v.5z">
   </symbol>
 
   <symbol id="close" viewBox="0 0 24 24">
-    <path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/>
+    <path
+      d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z" />
   </symbol>
 
   <symbol id="arrow" viewBox="0 0 24 24">
     <path
       d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
-      fill-rule="nonzero"
-    />
+      fill-rule="nonzero" />
   </symbol>
 
   <symbol id="user" viewBox="0 0 24 24">
     <path
-      d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z"
-    />
+      d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z" />
   </symbol>
 
   <symbol id="delivery" viewBox="0 0 24 24">
     <path
-      d="M5 11v1h8v-7h-10v-1c0-.552.448-1 1-1h10c.552 0 1 .448 1 1v2h4.667c1.117 0 1.6.576 1.936 1.107.594.94 1.536 2.432 2.109 3.378.188.312.288.67.288 1.035v4.48c0 1.089-.743 2-2 2h-1c0 1.656-1.344 3-3 3s-3-1.344-3-3h-4c0 1.656-1.344 3-3 3s-3-1.344-3-3h-1c-.552 0-1-.448-1-1v-6h-2v-2h7v2h-3zm3 5.8c.662 0 1.2.538 1.2 1.2 0 .662-.538 1.2-1.2 1.2-.662 0-1.2-.538-1.2-1.2 0-.662.538-1.2 1.2-1.2zm10 0c.662 0 1.2.538 1.2 1.2 0 .662-.538 1.2-1.2 1.2-.662 0-1.2-.538-1.2-1.2 0-.662.538-1.2 1.2-1.2zm-3-2.8h-10v2h.765c.549-.614 1.347-1 2.235-1 .888 0 1.686.386 2.235 1h5.53c.549-.614 1.347-1 2.235-1 .888 0 1.686.386 2.235 1h1.765v-4.575l-1.711-2.929c-.179-.307-.508-.496-.863-.496h-4.426v6zm1-5v3h5l-1.427-2.496c-.178-.312-.509-.504-.868-.504h-2.705zm-16-3h8v2h-8v-2z"
-    />
+      d="M5 11v1h8v-7h-10v-1c0-.552.448-1 1-1h10c.552 0 1 .448 1 1v2h4.667c1.117 0 1.6.576 1.936 1.107.594.94 1.536 2.432 2.109 3.378.188.312.288.67.288 1.035v4.48c0 1.089-.743 2-2 2h-1c0 1.656-1.344 3-3 3s-3-1.344-3-3h-4c0 1.656-1.344 3-3 3s-3-1.344-3-3h-1c-.552 0-1-.448-1-1v-6h-2v-2h7v2h-3zm3 5.8c.662 0 1.2.538 1.2 1.2 0 .662-.538 1.2-1.2 1.2-.662 0-1.2-.538-1.2-1.2 0-.662.538-1.2 1.2-1.2zm10 0c.662 0 1.2.538 1.2 1.2 0 .662-.538 1.2-1.2 1.2-.662 0-1.2-.538-1.2-1.2 0-.662.538-1.2 1.2-1.2zm-3-2.8h-10v2h.765c.549-.614 1.347-1 2.235-1 .888 0 1.686.386 2.235 1h5.53c.549-.614 1.347-1 2.235-1 .888 0 1.686.386 2.235 1h1.765v-4.575l-1.711-2.929c-.179-.307-.508-.496-.863-.496h-4.426v6zm1-5v3h5l-1.427-2.496c-.178-.312-.509-.504-.868-.504h-2.705zm-16-3h8v2h-8v-2z" />
   </symbol>
 
   <symbol id="support" viewBox="0 0 24 24">
     <path
-      d="M3.848 19h-.848c-.796 0-1.559-.316-2.121-.879-.563-.562-.879-1.325-.879-2.121v-3c0-7.175 5.377-13 12-13s12 5.825 12 13v3c0 .796-.316 1.559-.879 2.121-.562.563-1.325.879-2.121.879h-.848c-2.69 4.633-6.904 5-8.152 5-1.248 0-5.462-.367-8.152-5zm16.152-5.876c-.601.236-1.269-.18-1.269-.797 0-.304-.022-.61-.053-.915-1.761-.254-3.618-1.926-3.699-3.723-1.315 2.005-4.525 4.17-7.044 4.17 1.086-.699 1.839-2.773 1.903-3.508-.581 1.092-2.898 3.136-4.551 3.487l-.018.489c0 .619-.669 1.032-1.269.797v3.771c.287.256.632.464 1.041.594.225.072.412.224.521.424 2.206 4.046 5.426 4.087 6.438 4.087.929 0 3.719-.035 5.877-3.169-1.071.433-2.265.604-3.759.653-.37.6-1.18 1.016-2.118 1.016-1.288 0-2.333-.784-2.333-1.75s1.045-1.75 2.333-1.75c.933 0 1.738.411 2.112 1.005 1.9-.026 4.336-.334 5.888-2.645v-2.236zm-11-.624c.686 0 1.243.672 1.243 1.5s-.557 1.5-1.243 1.5-1.243-.672-1.243-1.5.557-1.5 1.243-1.5zm6 0c.686 0 1.243.672 1.243 1.5s-.557 1.5-1.243 1.5-1.243-.672-1.243-1.5.557-1.5 1.243-1.5zm5.478-1.5h1.357c-.856-5.118-4.937-9-9.835-9-4.898 0-8.979 3.882-9.835 9h1.357c.52-4.023 3.411-7.722 8.478-7.722s7.958 3.699 8.478 7.722z"
-    />
+      d="M3.848 19h-.848c-.796 0-1.559-.316-2.121-.879-.563-.562-.879-1.325-.879-2.121v-3c0-7.175 5.377-13 12-13s12 5.825 12 13v3c0 .796-.316 1.559-.879 2.121-.562.563-1.325.879-2.121.879h-.848c-2.69 4.633-6.904 5-8.152 5-1.248 0-5.462-.367-8.152-5zm16.152-5.876c-.601.236-1.269-.18-1.269-.797 0-.304-.022-.61-.053-.915-1.761-.254-3.618-1.926-3.699-3.723-1.315 2.005-4.525 4.17-7.044 4.17 1.086-.699 1.839-2.773 1.903-3.508-.581 1.092-2.898 3.136-4.551 3.487l-.018.489c0 .619-.669 1.032-1.269.797v3.771c.287.256.632.464 1.041.594.225.072.412.224.521.424 2.206 4.046 5.426 4.087 6.438 4.087.929 0 3.719-.035 5.877-3.169-1.071.433-2.265.604-3.759.653-.37.6-1.18 1.016-2.118 1.016-1.288 0-2.333-.784-2.333-1.75s1.045-1.75 2.333-1.75c.933 0 1.738.411 2.112 1.005 1.9-.026 4.336-.334 5.888-2.645v-2.236zm-11-.624c.686 0 1.243.672 1.243 1.5s-.557 1.5-1.243 1.5-1.243-.672-1.243-1.5.557-1.5 1.243-1.5zm6 0c.686 0 1.243.672 1.243 1.5s-.557 1.5-1.243 1.5-1.243-.672-1.243-1.5.557-1.5 1.243-1.5zm5.478-1.5h1.357c-.856-5.118-4.937-9-9.835-9-4.898 0-8.979 3.882-9.835 9h1.357c.52-4.023 3.411-7.722 8.478-7.722s7.958 3.699 8.478 7.722z" />
   </symbol>
 
   <symbol id="track" viewBox="0 0 24 24">
     <path
-      d="M15 0c-3.313 0-6 2.687-6 6s2.687 6 6 6 6-2.687 6-6-2.687-6-6-6zm.254 9.5l-.754-3-3-.75 6-2.25-2.246 6zm-.254 4.5v1h-2v-1.262c-.342-.088-.677-.194-1-.325v1.587h-3v-2.641l-1.699-1.703.732-.732c-.173-.307-.325-.626-.458-.956l-.981.981-1.594-1.594v-2.898l2.165 2.165c-.105-.509-.16-1.037-.163-1.577l-2.002-2.002v-.043h2.262c.406-1.574 1.275-2.958 2.458-4h-4.72c-1.105 0-2 .896-2 2v18.678c-.001 2.213 3.503 3.322 7.006 3.322 3.498 0 6.994-1.106 6.994-3.322v-6.94c-.641.165-1.309.262-2 .262zm-7 4h-3v-2h3v2zm0-3h-3v-5.23l3 3v2.23zm2 7c-.553 0-1-.448-1-1s.447-1 1-1 1 .448 1 1-.447 1-1 1zm2-4h-3v-2h3v2zm3 0h-2v-2h2v2z"
-    />
+      d="M15 0c-3.313 0-6 2.687-6 6s2.687 6 6 6 6-2.687 6-6-2.687-6-6-6zm.254 9.5l-.754-3-3-.75 6-2.25-2.246 6zm-.254 4.5v1h-2v-1.262c-.342-.088-.677-.194-1-.325v1.587h-3v-2.641l-1.699-1.703.732-.732c-.173-.307-.325-.626-.458-.956l-.981.981-1.594-1.594v-2.898l2.165 2.165c-.105-.509-.16-1.037-.163-1.577l-2.002-2.002v-.043h2.262c.406-1.574 1.275-2.958 2.458-4h-4.72c-1.105 0-2 .896-2 2v18.678c-.001 2.213 3.503 3.322 7.006 3.322 3.498 0 6.994-1.106 6.994-3.322v-6.94c-.641.165-1.309.262-2 .262zm-7 4h-3v-2h3v2zm0-3h-3v-5.23l3 3v2.23zm2 7c-.553 0-1-.448-1-1s.447-1 1-1 1 .448 1 1-.447 1-1 1zm2-4h-3v-2h3v2zm3 0h-2v-2h2v2z" />
   </symbol>
 
   <symbol id="cart" viewBox="0 0 24 24">
     <path
       d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm-10.563-5l-2.937-7h16.812l-1.977 7h-11.898zm11.233-5h-11.162l1.259 3h9.056l.847-3zm5.635-5l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"
-      fill-rule="nonzero"
-    />
+      fill-rule="nonzero" />
   </symbol>
 
   <symbol id="menu" viewBox="0 0 24 24">
     <path
       d="m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z"
-      fill-rule="nonzero"
-    />
+      fill-rule="nonzero" />
   </symbol>
 
   <symbol id="phone" viewBox="0 0 24 24">
     <path
-      d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"
-    />
+      d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z" />
   </symbol>
   <symbol id="gmail" viewBox="0 0 24 24">
     <path
-      d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"
-    />
+      d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" />
   </symbol>
   <symbol id="facebook" viewBox="0 0 24 24">
     <path
-      d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
-    />
+      d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
   </symbol>
   <symbol id="instagram" viewBox="0 0 24 24">
     <path
-      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-    />
+      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
   </symbol>
   <symbol id="twitter" viewBox="0 0 24 24">
     <path
-      d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
-    />
+      d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
   </symbol>
   y
   <symbol id="youtube" viewBox="0 0 24 24">
     <path
-      d="M10 9.333l5.333 2.662-5.333 2.672v-5.334zm14-4.333v14c0 2.761-2.238 5-5 5h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5zm-4 7c-.02-4.123-.323-5.7-2.923-5.877-2.403-.164-7.754-.163-10.153 0-2.598.177-2.904 1.747-2.924 5.877.02 4.123.323 5.7 2.923 5.877 2.399.163 7.75.164 10.153 0 2.598-.177 2.904-1.747 2.924-5.877z"
-    />
+      d="M10 9.333l5.333 2.662-5.333 2.672v-5.334zm14-4.333v14c0 2.761-2.238 5-5 5h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5zm-4 7c-.02-4.123-.323-5.7-2.923-5.877-2.403-.164-7.754-.163-10.153 0-2.598.177-2.904 1.747-2.924 5.877.02 4.123.323 5.7 2.923 5.877 2.399.163 7.75.164 10.153 0 2.598-.177 2.904-1.747 2.924-5.877z" />
   </symbol>
 </svg>
