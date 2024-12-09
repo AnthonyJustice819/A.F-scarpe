@@ -118,7 +118,7 @@ nav ul li a:hover {
   fill: #fff;
 }
 .cart-list {
-  max-height: 350px;
+  max-height: 367px;
   overflow: auto;
 }
 .cart-list::-webkit-scrollbar {
@@ -450,10 +450,10 @@ nav ul li a:hover {
     overflow: hidden;
     transition: 0.5s ease-in-out;
   }
-  .cart-list {
-    max-height: 435px;
+  /* .cart-list {
+    max-height: 400px;
     overflow: auto;
-  }
+  } */
   .cartsection {
     top: 3.8em;
     right: 1em;
