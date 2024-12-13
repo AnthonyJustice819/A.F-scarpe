@@ -135,7 +135,8 @@ overflow-y: auto;
   align-items: center;
   padding: 10px 5px;
   border-radius: 5px;
-  border: 1px solid white;
+  border-top: 1px solid white;
+  border-bottom : 1px solid white;
   margin: 10px 0;
 } 
 .cart-items img {
