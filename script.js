@@ -92,13 +92,12 @@ closesidebar.addEventListener("click", () => {
   sidebar.style.right = "-400px";
 });
 
-// Event delegation: Attach event listener to the parent element
 document.querySelector('.cart-list').addEventListener('click', function (e) {
   if (e.target.classList.contains('deletebtn')) {
     const parentEle = e.target.closest('.cart-items');
-    parentEle.remove(); // Remove the cart item
-    counter -= 1; // Decrement the counter
-    cartNum.innerText = counter; // Update the cart number displayed
+    parentEle.remove(); 
+    counter -= 1; 
+    cartNum.innerText = counter; 
   }
 });
 
