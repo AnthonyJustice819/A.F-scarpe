@@ -120,18 +120,15 @@ nav ul li a:hover {
 .cart-menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
 height: 100%;
 }
 .cart-list {
 flex-grow: 1;
 overflow-y: auto;
 }
-
 .cart-list::-webkit-scrollbar {
   width: 0;
 }
-
 .cart-items {
   display: flex;
   justify-content: space-between;
