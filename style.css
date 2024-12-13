@@ -471,10 +471,7 @@ overflow-y: auto;
     overflow: hidden;
     transition: 0.5s ease-in-out;
   }
-  .cart-list {
-    max-height: 510px;
-    overflow: auto;
-  }
+  
   .cartsection {
     top: 3.8em;
     right: 1em;
