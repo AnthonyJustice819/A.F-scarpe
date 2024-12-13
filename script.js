@@ -6,7 +6,8 @@ const addtocart = document.querySelectorAll("#addcart");
 const cart = document.querySelector(".cart");
 const sidebar = document.getElementById("sidebar");
 const closesidebar = document.querySelector(".sidebar-close");
-// const title = document.querySelectorAll('#title')
+
+
 
 menuList.style.maxHeight = "0px";
 
@@ -26,19 +27,9 @@ list.forEach(function (list) {
 
 let counter = 0;
 
-// addtocart.forEach(function(item) {
-
-//     item.addEventListener('click', (addtocartclicked) => {
-//         addtocartclicked.preventDefault();
-//         counter += 1;
-
-//         cartNum.innerText = counter;
-
-//     });
-// });
-
-addtocart.forEach((seee) => {
-  seee.addEventListener("click", (hello) => {
+addtocart.forEach(function (item) {
+  item.addEventListener("click", (addtocartclicked) => {
+    addtocartclicked.preventDefault();
     counter += 1;
 
     cartNum.innerText = counter;
@@ -72,12 +63,20 @@ function additemtocart(title, price, imagesrc) {
             </div>
             <p>${price}</p>
             <input type="number" value="1" class="quantity" size="7" maxlength="7">
-            <svg id="deletebtn" height="25px" width="25px">
+            <svg class="deletebtn" height="25px" width="25px">
               <use href="#delete" />
             </svg>
           </div>`;
   cartRow.innerHTML = cartRowContent;
-}
+  const deletebtns = document.querySelectorAll('.deletebtn');
+  deletebtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const parentEle = btn.parentElement.parentElement;
+      parentEle.remove(); 
+
+    });
+  });
+  }
 
 sidebar.style.right = "-400px";
 
@@ -92,6 +91,14 @@ cart.addEventListener("click", function (e) {
 closesidebar.addEventListener("click", () => {
   sidebar.style.right = "-400px";
 });
-// closesidebar.addEventListener('click', ()=>{
-//   sidebar.style.right = "0px";
-// })
+
+// Event delegation: Attach event listener to the parent element
+document.querySelector('.cart-list').addEventListener('click', function (e) {
+  if (e.target.classList.contains('deletebtn')) {
+    const parentEle = e.target.closest('.cart-items');
+    parentEle.remove(); // Remove the cart item
+    counter -= 1; // Decrement the counter
+    cartNum.innerText = counter; // Update the cart number displayed
+  }
+});
+

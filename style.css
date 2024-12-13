@@ -94,7 +94,6 @@ nav ul li a:hover {
 .user {
   display: none;
 }
-
 .sidebar {
   width: 350px;
   height: 85vh;
@@ -125,6 +124,7 @@ height: 100%;
 .cart-list {
 flex-grow: 1;
 overflow-y: auto;
+margin-bottom: 1em;
 }
 .cart-list::-webkit-scrollbar {
   width: 0;
@@ -151,8 +151,9 @@ overflow-y: auto;
   width: 59px;
   border-radius: 4px;
 }
-#deletebtn {
+.deletebtn {
   fill: red;
+  cursor: pointer;
 }
 .sidebar-footer {
   background: #5d5d5d;
@@ -187,6 +188,7 @@ overflow-y: auto;
   cursor: pointer;
   padding: 10px;
   margin-left: 2px;
+  font-weight: 800;
 }
 
 #home {
