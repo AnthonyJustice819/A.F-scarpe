@@ -117,13 +117,21 @@ nav ul li a:hover {
   cursor: pointer;
   fill: #fff;
 }
-.cart-list {
-  max-height: 420px;
-  overflow: auto;
+.cart-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+height: 100%;
 }
+.cart-list {
+flex-grow: 1;
+overflow-y: auto;
+}
+
 .cart-list::-webkit-scrollbar {
   width: 0;
 }
+
 .cart-items {
   display: flex;
   justify-content: space-between;
@@ -132,7 +140,7 @@ nav ul li a:hover {
   border-radius: 5px;
   border: 1px solid white;
   margin: 10px 0;
-}
+} 
 .cart-items img {
   width: 70px;
   object-fit: contain;
@@ -149,13 +157,14 @@ nav ul li a:hover {
   fill: red;
 }
 .sidebar-footer {
+  background: #5d5d5d;
+  padding-top: 1em;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-
+  align-items: center; 
   position: absolute;
   bottom: 10px;
-  width: 88%;
+  width: 88%; 
 }
 .total-amount {
   width: 100%;
@@ -165,10 +174,14 @@ nav ul li a:hover {
   color: #000;
   background-color: #fff;
   border-radius: 5px;
-  padding: 6px;
+  padding: 5px;
   margin-right: 2px;
+  border: none;
+  outline: none;
 }
 .checkout {
+  border: none;
+  outline: none;
   width: 100%;
   background: green;
   color: #fff;
@@ -177,6 +190,7 @@ nav ul li a:hover {
   padding: 10px;
   margin-left: 2px;
 }
+
 #home {
   width: 100%;
   background-image: url(/images/bgg.jpg);
