@@ -7,97 +7,73 @@ const cart = document.querySelector(".cart");
 const sidebar = document.getElementById("sidebar");
 const closesidebar = document.querySelector(".sidebar-close");
 
-
-
 menuList.style.maxHeight = "0px";
 
-btn.addEventListener("click", function (e) {
-  if (menuList.style.maxHeight == "0px") {
-    menuList.style.maxHeight = "270px";
-  } else {
-    menuList.style.maxHeight = "0px";
-  }
+btn.addEventListener("click", () => {
+  menuList.style.maxHeight = menuList.style.maxHeight === "0px" ? "270px" : "0px";
 });
 
-list.forEach(function (list) {
-  list.addEventListener("click", function (e) {
+list.forEach(item => {
+  item.addEventListener("click", () => {
     menuList.style.maxHeight = "0px";
   });
 });
 
 let counter = 0;
 
-addtocart.forEach(function (item) {
-  item.addEventListener("click", (addtocartclicked) => {
-    addtocartclicked.preventDefault();
+addtocart.forEach(item => {
+  item.addEventListener("click", event => {
+    event.preventDefault();
     counter += 1;
-
     cartNum.innerText = counter;
+    addtocartclicked(event);
   });
 });
 
-addtocart.forEach((i) => {
-  i.addEventListener("click", addtocartclicked);
-});
-
 function addtocartclicked(event) {
-  var button = event.target;
-  var shopitem = button.parentElement;
-  var title = shopitem.querySelector(".title").innerText;
-  var price = shopitem.querySelector(".price").innerText;
-  var imagesrc = shopitem.querySelector(".productimg").src;
+  const button = event.target;
+  const shopitem = button.parentElement;
+  const title = shopitem.querySelector(".title").innerText;
+  const price = shopitem.querySelector(".price").innerText;
+  const imagesrc = shopitem.querySelector(".productimg").src;
   console.log(title, price, imagesrc);
   additemtocart(title, price, imagesrc);
 }
 
 function additemtocart(title, price, imagesrc) {
   const cartRow = document.createElement("div");
-  cartRow.classList.add("cart-list");
-  const cartItems = document.querySelector(".cart-list").append(cartRow);
-  cartRowContent = `<div class="cart-items">
-            <div>
-              <img src="${imagesrc}" alt="">
-              <div>
-                <p>${title}</p>
-              </div>
-            </div>
-            <p>${price}</p>
-            <input type="number" value="1" class="quantity" size="7" maxlength="7">
-            <svg class="deletebtn" height="25px" width="25px">
-              <use href="#delete" />
-            </svg>
-          </div>`;
-  cartRow.innerHTML = cartRowContent;
-  const deletebtns = document.querySelectorAll('.deletebtn');
-  deletebtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const parentEle = btn.parentElement.parentElement;
-      parentEle.remove(); 
-
-    });
-  });
-  }
+  cartRow.classList.add("cart-items");
+  cartRow.innerHTML = `
+    <div>
+      <img src="${imagesrc}" alt="">
+      <div>
+        <p>${title}</p>
+      </div>
+    </div>
+    <p>${price}</p>
+    <input type="number" value="1" class="quantity" size="7" maxlength="7">
+    <svg class="deletebtn" height="25px" width="25px">
+      <use href="#delete" />
+    </svg>
+  `;
+  document.querySelector(".cart-list").append(cartRow);
+}
 
 sidebar.style.right = "-400px";
 
-cart.addEventListener("click", function (e) {
-  if (sidebar.style.right == "-400px") {
-    sidebar.style.right = "-0px";
-  } else {
-    sidebar.style.right = "-400px";
-  }
+cart.addEventListener("click", () => {
+  sidebar.style.right = sidebar.style.right === "-400px" ? "0px" : "-400px";
 });
 
 closesidebar.addEventListener("click", () => {
   sidebar.style.right = "-400px";
 });
 
-document.querySelector('.cart-list').addEventListener('click', function (e) {
+document.querySelector('.cart-list').addEventListener('click', e => {
   if (e.target.classList.contains('deletebtn')) {
     const parentEle = e.target.closest('.cart-items');
-    parentEle.remove(); 
-    counter -= 1; 
-    cartNum.innerText = counter; 
+    parentEle.remove();
+    counter -= 1;
+    cartNum.innerText = counter;
   }
 });
-
