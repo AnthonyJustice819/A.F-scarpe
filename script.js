@@ -77,3 +77,7 @@ document.querySelector('.cart-list').addEventListener('click', e => {
     cartNum.innerText = counter;
   }
 });
+
+
+
+

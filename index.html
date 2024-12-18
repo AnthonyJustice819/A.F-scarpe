@@ -7,6 +7,16 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css" />
   <script src="/script.js" async></script>
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" async src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 
 <body>
@@ -19,6 +29,9 @@
         <li><a href="#">について</a></li>
         <li><a href="#">サービス</a></li>
       </ul>
+
+    
+  
     </nav>
     <div class="biii">
       <span class="login">ログイン</span>
@@ -26,7 +39,11 @@
         <use href="#user" />
       </svg>
 
+      <div id="google_translate_element"></div>
+        
+
       <div class="cart">
+       
         <svg class="carticon" height="28px" width="28px">
           <use href="#cart" />
         </svg>
@@ -194,6 +211,7 @@
       </div>
     </section>
   </div>
+
 </body>
 
 </html>
