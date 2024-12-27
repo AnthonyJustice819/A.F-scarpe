@@ -62,7 +62,7 @@ function additemtocart(title, price, imagesrc) {
 sidebar.style.right = "-400px";
 
 cart.addEventListener("click", () => {
-  sidebar.style.right = sidebar.style.right === "-400px" ? "0px" : "-400px";
+  sidebar.style.right = sidebar.style.right === "-400px" ? "0px" : "-400px"; 
 });
 
 closesidebar.addEventListener("click", () => {
@@ -79,5 +79,14 @@ document.querySelector('.cart-list').addEventListener('click', e => {
 });
 
 
+
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+      pageLanguage: 'en', 
+      includedLanguages: 'en,es,zh-CN,hi,ar,fr,de,ru,pt,ja,ko,it,tr,bn,ur,th,vi,sw,ms,fa', 
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
 
 

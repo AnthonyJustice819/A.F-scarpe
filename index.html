@@ -6,35 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="/script.js" async></script>
+  <script src="/script.js" defer></script>
+  <script type="text/javascript" defer src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'en',
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-        }, 'google_translate_element');
-    }
-</script>
-<script type="text/javascript" async src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 
 <body>
+
   <header>
     <a href="#home"> <img src="/images/newbg.png" class="logo" alt="" /></a>
     <nav>
       <ul id="menuList">
-        <li><a href="#">家</a></li>
-        <li><a href="#">製品</a></li>
-        <li><a href="#">について</a></li>
-        <li><a href="#">サービス</a></li>
-      </ul>
-
-    
-  
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+      </ul>  
     </nav>
+ 
+    <div id="google_translate_element"></div>
+
     <div class="biii">
-      <span class="login">ログイン</span>
+      <span class="login">Login</span>
       <svg class="user" height="25px" width="25px">
         <use href="#user" />
       </svg>
@@ -211,6 +204,9 @@
       </div>
     </section>
   </div>
+
+
+ 
 
 </body>
 

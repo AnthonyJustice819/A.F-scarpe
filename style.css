@@ -19,8 +19,6 @@ body {
   background: #f9f9f9;
   padding: 2em;
 }
-
-
 .logo {
   height: 8em;
   width: 8em;
@@ -110,6 +108,14 @@ nav ul li a:hover {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
+
+
+
+
+.goog-te-banner-frame {
+  display: none !important; /* Hides the top banner that Google Translate sometimes adds */
+}
+
 
 .sidebar-close {
   position: absolute;
@@ -420,6 +426,8 @@ margin-bottom: 1em;
 
 /* mobile screen size */
 @media screen and (max-width: 680px) {
+ 
+  
   .wrapper {
     padding: 0.5em;
   }
