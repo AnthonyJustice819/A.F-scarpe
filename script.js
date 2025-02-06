@@ -78,9 +78,6 @@ document.querySelector('.cart-list').addEventListener('click', e => {
   }
 });
 
-
-
-
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({
     pageLanguage: 'en',
